@@ -1,69 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
-    rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="style.css" />
-    <title>linconl rodrigues</title>
+    <title>Pastor Lincoln Rodrigues</title>
   </head>
   <body>
-    <main>
-      <div id="container">
-        <div id="profile">
-          <img src="images/prfile-photo-2.jpg" alt="Profile Photo" />
-          <p>Lincoln Rodrigues</p>
+    <nav class="navbar">
+      <div class="nav-content">
+        <span class="nav-logo">LR.</span>
+        <div class="social-mini">
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
         </div>
-      
-
-      <ul>
-        <li>
-          <a
-            href="https://youtube.com/@LincolnRodrigues?si=AzrU3kBOP4_xCYJf"
-            target="_blank"
-            >YouTube</a
-          >
-        </li>
-
-        <li>
-          <a
-            href="https://www.facebook.com/heber.linconl?mibextid=LQQJ4d"
-            target="_blank"
-            >Facebook</a
-          >
-        </li>
-
-        <li>
-          <a
-            href="https://www.tiktok.com/@lincoln.rodriaguiar?_t=8hUjVeqzwph&_r=1"
-            >TikTok</a
-          >
-        </li>
-      </ul>
-
-      <div id="social-links">
-        <a href="https://youtube.com/@LincolnRodrigues?si=AzrU3kBOP4_xCYJf" target="_blank"><ion-icon name="logo-youtube"></ion-icon> </a>
-        <a href="https://www.facebook.com/heber.linconl?mibextid=LQQJ4d" target="_blank"><ion-icon name="logo-facebook"></ion-icon> </a>
-        <a href="https://www.tiktok.com/@lincoln.rodriaguiar?_t=8hUjVeqzwph&_r=1" target="_blank"><ion-icon name="logo-tiktok"></ion-icon> </a>
       </div>
+    </nav>
+
+    <div class="main-wrapper">
+      <header class="hero-card">
+        <div class="img-container">
+          <img
+            src="images/prfile-photo-2.jpg"
+            alt="Foto de Lincoln Rodrigues"
+          />
+        </div>
+        <div class="bio-text">
+          <h1>Lincoln Rodrigues</h1>
+          <p class="role">Pastor & Criador de Conteúdo</p>
+          <p class="description">
+            Levando a palavra de Deus através da excelência e da comunicação.
+            Bem-vindo ao meu espaço oficial.
+          </p>
+        </div>
+      </header>
+
+      <section class="video-section">
+        <h2 class="section-title">Mensagem de Fé</h2>
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ks8AKepHphI?si=wYLKUFUkKt7dAI-R"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="links-section">
+        <h2 class="section-title">Conecte-se comigo</h2>
+        <div class="links-container">
+          <a
+            href="https://youtube.com/@LincolnRodrigues"
+            target="_blank"
+            class="card-link youtube"
+          >
+            <div class="icon-box">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </div>
+            <div class="text-box">
+              <h3>YouTube</h3>
+              <span>Inscreva-se no canal</span>
+            </div>
+            <ion-icon name="arrow-forward-outline" class="arrow"></ion-icon>
+          </a>
+
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            class="card-link facebook"
+          >
+            <div class="icon-box">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+            <div class="text-box">
+              <h3>Facebook</h3>
+              <span>Acompanhe a página</span>
+            </div>
+            <ion-icon name="arrow-forward-outline" class="arrow"></ion-icon>
+          </a>
+
+          <a href="https://tiktok.com" target="_blank" class="card-link tiktok">
+            <div class="icon-box"><ion-icon name="logo-tiktok"></ion-icon></div>
+            <div class="text-box">
+              <h3>TikTok</h3>
+              <span>Vídeos curtos</span>
+            </div>
+            <ion-icon name="arrow-forward-outline" class="arrow"></ion-icon>
+          </a>
+        </div>
+      </section>
     </div>
 
     <footer>
-      <img id="logo-rodapé" src="images/logo-2.png" alt="logo" />
+      <img
+        class="logo-rodape"
+        src="images/logo-2.png"
+        alt="Logo Lincoln Rodrigues"
+      />
+      <p>&copy; 2025 Lincoln Rodrigues. Todos os direitos reservados.</p>
     </footer>
+
     <script
-type="module"
-src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-></script>
-<script
-nomodule
-src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-></script>
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
