@@ -33,7 +33,7 @@ body {
   backdrop-filter: blur(10px);
   z-index: 1000;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4x 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .nav-content {
@@ -226,7 +226,7 @@ body {
 }
 
 /* --- MÁGICA PARA CELULAR (Responsividade) --- */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     
     /* 1. Removemos as bordas laterais gigantes */
     .main-wrapper {
