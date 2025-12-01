@@ -127,19 +127,8 @@ body {
   max-width: 450px; /* Limita a largura para leitura confortável */
 }
 
-/* --- CELULAR (Responsividade) --- */
-@media (max-width: 600px) {
-  .hero-card {
-    flex-direction: column; /* No celular, um em cima do outro */
-    text-align: center; /* Centraliza tudo */
-    padding: 30px 20px;
-    gap: 20px;
-  }
 
-  .bio-text h1 {
-    font-size: 28px; /* Diminui um pouco o nome no celular */
-  }
-}
+
 
 /* --- SEÇÃO DE VÍDEO --- */
 .section-title {
@@ -237,9 +226,23 @@ body {
 }
 
 /* --- MÁGICA PARA CELULAR (Responsividade) --- */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+  .hero-card {
+    flex-direction: column; /* No celular, um em cima do outro */
+    text-align: center; /* Centraliza tudo */
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .bio-text h1 {
+    font-size: 28px; /* Diminui um pouco o nome no celular */
+  }
+}
+@media (max-width: 600px) {
   .main-wrapper {
-    padding: 100px 24px 40px 24px;
+    padding: 100px 10px 40px 10px;
+    width: 100%;
+    max-width: 100%; 
   }
   .links-container {
     flex-direction: column; /* Muda para um embaixo do outro no celular */
