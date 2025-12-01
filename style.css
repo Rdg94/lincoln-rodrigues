@@ -227,30 +227,46 @@ body {
 
 /* --- MÁGICA PARA CELULAR (Responsividade) --- */
 @media (max-width: 768px) {
-  .hero-card {
-    flex-direction: column; /* No celular, um em cima do outro */
-    text-align: center; /* Centraliza tudo */
-    padding: 30px 20px;
-    gap: 20px;
-  }
+    
+    /* 1. Removemos as bordas laterais gigantes */
+    .main-wrapper {
+        /* 90px no topo (por causa da barra), 12px nas laterais */
+        padding: 90px 12px 40px 12px !important; 
+        width: 100% !important;
+        max-width: 100% !important;
+    }
 
-  .bio-text h1 {
-    font-size: 28px; /* Diminui um pouco o nome no celular */
-  }
+    /* 2. Forçamos os links do "Conecte-se" a ficar em COLUNA */
+    .links-container {
+        display: flex !important;
+        flex-direction: column !important; /* Isso obriga um ficar embaixo do outro */
+        gap: 12px !important;
+    }
 
-  .main-wrapper {
-    padding: 80px 10px 25px 10px;
-    width: 100%;
-    max-width: 100%; 
-  }
-  
-  .links-container {
-    flex-direction: column; /* Muda para um embaixo do outro no celular */
-  }
+    /* Garante que o botão ocupe a largura cheia */
+    .card-link {
+        width: 100% !important;
+        min-width: 0 !important; /* Evita travar tamanho */
+    }
 
-  .card-link {
-    width: 100%; /* Ocupa a largura total da tela */
-  }
+    /* 3. Ajuste fino do Hero (Perfil) para caber na tela */
+    .hero-card {
+        padding: 16px !important; /* Menos borda interna */
+        gap: 12px !important;
+    }
+    
+    .img-container img {
+        width: 90px !important; /* Foto levemente menor para não brigar com o texto */
+        height: 90px !important;
+    }
+
+    .bio-text h1 {
+        font-size: 22px !important;
+    }
+    
+    .bio-text .description {
+        font-size: 13px !important;
+    }
 }
 
 /* Cores específicas para as marcas (opcional, ou manter tudo clean) */
