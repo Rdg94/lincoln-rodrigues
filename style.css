@@ -226,7 +226,7 @@ body {
 }
 
 /* --- MÁGICA PARA CELULAR (Responsividade) --- */
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .hero-card {
     flex-direction: column; /* No celular, um em cima do outro */
     text-align: center; /* Centraliza tudo */
