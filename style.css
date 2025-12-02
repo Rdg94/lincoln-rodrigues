@@ -227,19 +227,16 @@ body {
 
 /* --- MÁGICA PARA CELULAR (Responsividade) --- */
 @media (max-width: 992px) {
-    
-    @media (max-width: 992px) {
   /* 1. Removemos as bordas laterais gigantes */
   .main-wrapper {
     /* 90px no topo (por causa da barra), 12px nas laterais */
-    padding: 90px 12px 40px 12px !important;
+    padding: 90px 5px 40px 5px !important;
     width: 100% !important;
   }
 
-.hero-card {
+  .hero-card {
     /* padding: 16px !important; Menos borda interna */
     gap: 12px !important;
-    align-items: center !important;
     flex-direction: row;
   }
 
@@ -264,7 +261,6 @@ body {
     margin-left: 40px !important;
   }
 
-
   /* 2. Forçamos os links do "Conecte-se" a ficar em COLUNA */
   .links-container {
     display: flex !important;
@@ -277,8 +273,8 @@ body {
     width: 100% !important;
     min-width: 0 !important; /* Evita travar tamanho */
   }
-  
 }
+
 
 /* Cores específicas para as marcas (opcional, ou manter tudo clean) */
 .card-link.youtube:hover .icon-box {
