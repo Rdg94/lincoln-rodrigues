@@ -228,45 +228,56 @@ body {
 /* --- MÁGICA PARA CELULAR (Responsividade) --- */
 @media (max-width: 992px) {
     
-    /* 1. Removemos as bordas laterais gigantes */
-    .main-wrapper {
-        /* 90px no topo (por causa da barra), 12px nas laterais */
-        padding: 90px 12px 40px 12px !important; 
-        width: 100% !important;
-        max-width: 100% !important;
-    }
+    @media (max-width: 992px) {
+  /* 1. Removemos as bordas laterais gigantes */
+  .main-wrapper {
+    /* 90px no topo (por causa da barra), 12px nas laterais */
+    padding: 90px 12px 40px 12px !important;
+    width: 100% !important;
+  }
 
-    /* 2. Forçamos os links do "Conecte-se" a ficar em COLUNA */
-    .links-container {
-        display: flex !important;
-        flex-direction: column !important; /* Isso obriga um ficar embaixo do outro */
-        gap: 12px !important;
-    }
+.hero-card {
+    /* padding: 16px !important; Menos borda interna */
+    gap: 12px !important;
+    align-items: center !important;
+    flex-direction: row;
+  }
 
-    /* Garante que o botão ocupe a largura cheia */
-    .card-link {
-        width: 100% !important;
-        min-width: 0 !important; /* Evita travar tamanho */
-    }
+  .img-container img {
+    width: 200px !important; /* Foto levemente menor para não brigar com o texto */
+    height: 200px !important;
+    border-width: 2px !important;
+  }
 
-    /* 3. Ajuste fino do Hero (Perfil) para caber na tela */
-    .hero-card {
-        padding: 16px !important; /* Menos borda interna */
-        gap: 12px !important;
-    }
-    
-    .img-container img {
-        width: 90px !important; /* Foto levemente menor para não brigar com o texto */
-        height: 90px !important;
-    }
+  .bio-text h1 {
+    font-size: 40px !important;
+    margin-left: 40px !important;
+  }
 
-    .bio-text h1 {
-        font-size: 22px !important;
-    }
-    
-    .bio-text .description {
-        font-size: 13px !important;
-    }
+  .role {
+    font-size: 20px !important;
+    margin-bottom: 10px;
+    margin-left: 40px !important;
+  }
+  .bio-text .description {
+    font-size: 15px !important;
+    margin-left: 40px !important;
+  }
+
+
+  /* 2. Forçamos os links do "Conecte-se" a ficar em COLUNA */
+  .links-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  /* Garante que o botão ocupe a largura cheia */
+  .card-link {
+    width: 100% !important;
+    min-width: 0 !important; /* Evita travar tamanho */
+  }
+  
 }
 
 /* Cores específicas para as marcas (opcional, ou manter tudo clean) */
