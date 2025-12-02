@@ -227,51 +227,94 @@ body {
 
 /* --- MÁGICA PARA CELULAR (Responsividade) --- */
 @media (max-width: 992px) {
-  /* 1. Removemos as bordas laterais gigantes */
+  /* 1. Ajuste do Container Principal */
   .main-wrapper {
-    /* 90px no topo (por causa da barra), 12px nas laterais */
-    padding: 90px 5px 40px 5px !important;
+    /* Mais espaço nas laterais (20px) para não colar na borda, mas preenchendo bem */
+    padding: 60px 20px 0px 20px !important;
     width: 100% !important;
   }
 
+  /* --- HERO SECTION (Perfil) --- */
   .hero-card {
-    /* padding: 16px !important; Menos borda interna */
-    gap: 12px !important;
-    flex-direction: row;
+    padding: 24px 20px !important; /* Espaçamento interno confortável */
+    gap: 20px !important; /* Espaço entre foto e texto */
+    align-items: center !important;
+    flex-direction: row !important; /* Mantém lado a lado */
   }
 
+  /* Foto: Tamanho fixo e proporcional */
   .img-container img {
-    width: 200px !important; /* Foto levemente menor para não brigar com o texto */
-    height: 200px !important;
+    width: 90px !important;
+    height: 90px !important;
     border-width: 2px !important;
+    min-width: 90px !important; /* Garante que a foto não encolha */
   }
 
+  /* Textos: Aumentados para facilitar leitura */
   .bio-text h1 {
-    font-size: 40px !important;
-    margin-left: 40px !important;
+    font-size: 22px !important; /* Nome maior */
+    line-height: 1.2 !important;
+    margin-bottom: 6px !important;
   }
 
-  .role {
-    font-size: 20px !important;
-    margin-bottom: 10px;
-    margin-left: 40px !important;
+  .bio-text .role {
+    font-size: 12px !important;
+    margin-bottom: 8px !important;
+    opacity: 0.9;
   }
+
   .bio-text .description {
-    font-size: 15px !important;
-    margin-left: 40px !important;
+    font-size: 14px !important; /* Texto de descrição maior */
+    line-height: 1.5 !important;
+    color: #cbd5e1 !important; /* Cor um pouco mais clara para contraste */
   }
 
-  /* 2. Forçamos os links do "Conecte-se" a ficar em COLUNA */
+  /* --- LINKS (Botões) --- */
   .links-container {
     display: flex !important;
-    flex-direction: column !important;
-    gap: 12px !important;
+    flex-direction: column !important; /* Um embaixo do outro */
+    gap: 16px !important;
   }
 
-  /* Garante que o botão ocupe a largura cheia */
   .card-link {
     width: 100% !important;
-    min-width: 0 !important; /* Evita travar tamanho */
+    margin: 0 !important;
+    padding: 20px !important; /* Botão mais "gordinho" para o dedo */
+
+    /* CORREÇÃO DO ESPAÇO EM BRANCO: */
+    justify-content: flex-start !important; /* Alinha tudo à esquerda */
+  }
+
+  /* Aumenta o ícone da rede social */
+  .icon-box ion-icon {
+    font-size: 28px !important;
+  }
+
+  /* Aproxima o texto do ícone */
+  .text-box {
+    margin-left: 16px !important; /* Espaço fixo entre ícone e texto */
+    flex: 1 !important; /* O texto ocupa o espaço disponível, empurrando a seta */
+  }
+
+  .text-box h3 {
+    font-size: 18px !important; /* Título do botão maior */
+    margin-bottom: 2px !important;
+  }
+
+  .text-box span {
+    font-size: 14px !important; /* Subtítulo legível */
+  }
+
+  /* A seta fica fixa lá no final, sem criar buraco no meio do texto */
+  .arrow {
+    margin-left: auto !important;
+    font-size: 20px !important;
+    opacity: 1 !important; /* Seta sempre visível no celular */
+    transform: none !important;
+  }
+
+  footer {
+    padding-top: 20px;
   }
 }
 
