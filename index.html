@@ -1,82 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Pastor Lincoln Rodrigues" />
-    <meta
-      property="og:description"
-      content="Pastor & Criador de Conteúdo. Assista à última mensagem de fé."
-    />
-    <meta
-      property="og:image"
-      content="https://rdg94.github.io/lincoln-rodrigues/images/prfile-photo-2.jpg"
-    />
-    <meta
-      property="og:url"
-      content="https://rdg94.github.io/lincoln-rodrigues/"
-    />
-    <meta name="theme-color" content="#0f172a" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    
+    <!-- SEO and Social Metadata -->
     <title>Pastor Lincoln Rodrigues</title>
+    <meta name="description" content="Pastor & Criador de Conteúdo. Assista à última mensagem de fé e conecte-se com as redes sociais." />
+    <meta name="theme-color" content="#0a0f1d" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pastor Lincoln Rodrigues" />
+    <meta property="og:description" content="Pastor & Criador de Conteúdo. Assista à última mensagem de fé." />
+    <meta property="og:image" content="https://rdg94.github.io/lincoln-rodrigues/images/hero-photo.jpg" />
+    <meta property="og:url" content="https://rdg94.github.io/lincoln-rodrigues/" />
+
+    <!-- Google Fonts: Inter & Outfit & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Background Glows -->
+    <div class="bg-glow-container" aria-hidden="true">
+      <div class="bg-glow bg-glow-1"></div>
+      <div class="bg-glow bg-glow-2"></div>
+      <div class="bg-glow bg-glow-3"></div>
+    </div>
+
+    <!-- Navigation Bar -->
     <nav class="navbar">
       <div class="nav-content">
-        <span class="nav-logo">LR.</span>
+        <span class="nav-logo" id="nav-logo-text">LR.</span>
         <div class="social-mini">
-          <a href="https://www.instagram.com/lincolnheber_?igsh=MWRmdjdnZjdsMTN0bg=="  target = "_balank">
-              <ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="https://www.instagram.com/lincolnheber_?igsh=MWRmdjdnZjdsMTN0bg==" target="_blank" rel="noopener" id="nav-instagram" aria-label="Instagram">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
         </div>
       </div>
     </nav>
 
-    <div class="main-wrapper">
-      <header class="hero-card">
-        <div class="img-container">
-          <img
-            src="images/prfile-photo-2.jpg"
-            alt="Foto de Lincoln Rodrigues"
-          />
-        </div>
-        <div class="bio-text">
-          <h1>Lincoln Rodrigues</h1>
-          <p class="role">Pastor & Criador de Conteúdo</p>
-          <p class="description">
-            Levando a palavra de Deus com excelência através da comunicação.
-          </p>
-        <p class="description">
-            Bem-vindo ao meu espaço oficial.
-          </p>
+    <!-- Main Content Wrapper -->
+    <main class="main-wrapper">
+      
+      <!-- Hero Section -->
+      <header class="hero-section">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-badge">Canal Oficial</div>
+            <h1>Lincoln Rodrigues</h1>
+            <p class="hero-role">Pastor &amp; Criador de Conteúdo</p>
+            <div class="hero-description-box">
+              <p class="description">
+                Levando a palavra de Deus com excelência através da comunicação.
+              </p>
+              <p class="description highlight">
+                Bem-vindo ao meu espaço oficial.
+              </p>
+            </div>
+            <div class="hero-actions">
+              <a href="#links" class="btn-primary" id="btn-hero-connect">
+                Conectar-se <ion-icon name="arrow-down-outline"></ion-icon>
+              </a>
+              <a href="#mensagem" class="btn-secondary" id="btn-hero-video">
+                Mensagem de Fé <ion-icon name="play-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="hero-image-wrapper">
+            <div class="hero-image-card">
+              <img
+                src="images/hero-photo.jpg"
+                alt="Foto de Lincoln Rodrigues no púlpito"
+                class="hero-img"
+              />
+              <div class="image-overlay-card">
+                <ion-icon name="mic-outline"></ion-icon>
+                <span>Comunicando com propósito</span>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
 
-      <section class="video-section">
+      <!-- Video Section -->
+      <section id="mensagem" class="video-section">
         <h2 class="section-title">Mensagem de Fé</h2>
-        <div class="video-container">
-          <iframe width="560" height="315" 
-              src="https://www.youtube.com/embed/Dp-Oi8Yf8KY?si=4vbf8baRY8bgqs25&amp;controls=0" 
-              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-              clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-              </iframe>
+        <div class="video-card">
+          <div class="video-container">
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/Dp-Oi8Yf8KY?si=4vbf8baRY8bgqs25&amp;controls=0" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <p>Assista ao vídeo em destaque do nosso canal do YouTube. Uma mensagem inspiradora para edificar a sua fé e fortalecer a sua caminhada com Deus.</p>
+          </div>
         </div>
       </section>
 
-      <section class="links-section">
+      <!-- Links/Socials Grid -->
+      <section id="links" class="links-section">
         <h2 class="section-title">Conecte-se comigo</h2>
-        <div class="links-container">
+        <div class="links-grid">
+          
+          <a
+            href="https://www.instagram.com/lincolnheber_?igsh=MWRmdjdnZjdsMTN0bg=="
+            target="_blank"
+            rel="noopener"
+            class="card-link instagram"
+            id="link-instagram"
+          >
+            <div class="icon-box">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+            <div class="text-box">
+              <h3>Instagram</h3>
+              <span>Siga o meu perfil oficial</span>
+            </div>
+            <ion-icon name="arrow-forward-outline" class="arrow"></ion-icon>
+          </a>
+
           <a
             href="https://youtube.com/@LincolnRodrigues"
             target="_blank"
+            rel="noopener"
             class="card-link youtube"
+            id="link-youtube"
           >
             <div class="icon-box">
               <ion-icon name="logo-youtube"></ion-icon>
@@ -91,7 +146,9 @@
           <a
             href="https://facebook.com"
             target="_blank"
+            rel="noopener"
             class="card-link facebook"
+            id="link-facebook"
           >
             <div class="icon-box">
               <ion-icon name="logo-facebook"></ion-icon>
@@ -103,19 +160,29 @@
             <ion-icon name="arrow-forward-outline" class="arrow"></ion-icon>
           </a>
 
-          <a href="https://tiktok.com" target="_blank" class="card-link tiktok">
-            <div class="icon-box"><ion-icon name="logo-tiktok"></ion-icon></div>
+          <a 
+            href="https://tiktok.com" 
+            target="_blank" 
+            rel="noopener"
+            class="card-link tiktok"
+            id="link-tiktok"
+          >
+            <div class="icon-box">
+              <ion-icon name="logo-tiktok"></ion-icon>
+            </div>
             <div class="text-box">
               <h3>TikTok</h3>
-              <span>Vídeos curtos</span>
+              <span>Vídeos curtos diários</span>
             </div>
             <ion-icon name="arrow-forward-outline" class="arrow"></ion-icon>
           </a>
+          
         </div>
       </section>
-    </div>
+    </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
       <img
         class="logo-rodape"
         src="images/logo-2.png"
@@ -124,6 +191,7 @@
       <p>&copy; 2026 Lincoln Rodrigues. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Ionicons -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
